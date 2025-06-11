@@ -1,7 +1,7 @@
 {
-  "/api/github/route": "app/api/github/route.js",
-  "/api/discord/route": "app/api/discord/route.js",
   "/docs/page": "app/docs/page.js",
+  "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/api/github/route": "app/api/github/route.js",
+  "/api/discord/route": "app/api/discord/route.js"
 }

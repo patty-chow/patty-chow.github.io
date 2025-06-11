@@ -289,16 +289,32 @@ export default function Home() {
           </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+              {/* Microsoft */}
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-blue-500/20 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
+                <div className="relative flex flex-col items-center justify-center p-8 bg-neutral-800/80 backdrop-blur-sm rounded-xl border border-neutral-700/50 hover:border-blue-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
+                  <div className="w-20 h-20 flex items-center justify-center mb-4">
+                    <svg className="w-16 h-16 text-blue-400 group-hover:text-blue-300 transition-colors" viewBox="0 0 23 23" fill="currentColor">
+                      <path d="M0 0h11v11H0z"/>
+                      <path d="M12 0h11v11H12z"/>
+                      <path d="M0 12h11v11H0z"/>
+                      <path d="M12 12h11v11H12z"/>
+                    </svg>
+                  </div>
+                  <div className="text-center">
+                    <h3 className="text-sm font-bold text-white group-hover:text-blue-300 transition-colors mb-1">Microsoft</h3>
+                    <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">Azure DocumentDB</p>
+                  </div>
+                </div>
+              </div>
+
               {/* Amazon DocumentDB */}
               <div className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-yellow-500/20 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
                 <div className="relative flex flex-col items-center justify-center p-8 bg-neutral-800/80 backdrop-blur-sm rounded-xl border border-neutral-700/50 hover:border-orange-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
                   <div className="w-20 h-20 flex items-center justify-center mb-4">
-                    {/* Official AWS Logo */}
-                    <svg className="w-16 h-10 text-orange-400 group-hover:text-orange-300 transition-colors" fill="currentColor" viewBox="0 0 304 182">
-                      <path d="M86.4 66.4c0 3.7.4 6.7 1.1 8.9.8 2.3 1.8 4.6 3.2 6.8.5.8.7 1.6.7 2.3 0 1-.6 2-1.9 3l-6.3 4.2c-.9.6-1.8.9-2.6.9-1 0-2-.5-3-1.4-1.4-1.5-2.6-3.1-3.6-4.7-1-1.7-2-3.6-3.1-5.9-7.8 9.2-17.6 13.8-29.4 13.8-8.4 0-15.1-2.4-20-7.2s-7.4-11.2-7.4-19.2c0-8.5 3-15.4 9.1-20.6s14.2-7.8 24.5-7.8c3.4 0 6.9.3 10.6.8 3.7.5 7.5 1.3 11.5 2.2v-7.3c0-7.6-1.6-12.9-4.7-16-3.2-3.1-8.6-4.6-16.3-4.6-3.5 0-7.1.4-10.8 1.3s-7.3 2-10.8 3.5c-1.6.7-2.8 1.1-3.5 1.3s-1.2.3-1.6.3c-1.4 0-2.1-1-2.1-3.1v-4.9c0-1.6.2-2.8.7-3.5s1.4-1.4 2.8-2.1c3.5-1.8 7.7-3.3 12.6-4.5 4.9-1.3 10.1-1.9 15.6-1.9 11.9 0 20.6 2.7 26.2 8.1 5.5 5.4 8.3 13.6 8.3 24.6v32.4zm-40.6 15.2c3.3 0 6.7-.6 10.3-1.8s6.8-3.4 9.5-6.4c1.6-1.9 2.8-4 3.4-6.4s1-5.3 1-8.7v-4.2c-2.9-.7-6-1.3-9.2-1.7s-6.3-.6-9.4-.6c-6.7 0-11.6 1.3-14.9 4s-4.9 6.5-4.9 11.5c0 4.7 1.2 8.2 3.7 10.6 2.4 2.5 5.9 3.7 10.5 3.7zm80.3 10.8c-1.8 0-3-.3-3.8-1-.8-.6-1.5-2-2.1-4.1L96.6 27.9c-.6-2-.9-3.3-.9-4 0-1.6.8-2.5 2.4-2.5h9.8c1.9 0 3.2.3 3.9 1 .8.6 1.4 2 2 4.1l16.8 66.2 15.6-66.2c.5-2 1.1-3.4 1.9-4.1.8-.7 2.2-1 4.1-1h8c1.9 0 3.2.3 4.1 1 .8.6 1.5 2 1.9 4.1L181 87.5l17.3-66.2c.6-2 1.3-3.4 2-4.1.8-.7 2.1-1 3.9-1h9.3c1.6 0 2.5.8 2.5 2.5 0 .5-.1 1-.2 1.6s-.3 1.4-.7 2.5l-24.1 77.3c-.6 2-1.3 3.4-2.1 4.1-.8.7-2.1 1-3.8 1h-8.6c-1.9 0-3.2-.3-4.1-1s-1.5-2-1.9-4.1L144.4 50.8 129.3 91.2c-.5 2-1.1 3.4-1.9 4.1-.8.7-2.2 1-4.1 1h-8.6zm128.5 2.7c-5.2 0-10.4-.6-15.4-1.8s-8.9-2.5-11.5-4c-1.6-.9-2.7-1.9-3.1-2.8s-.6-1.9-.6-3v-5.1c0-2.1.8-3.1 2.3-3.1.6 0 1.2.1 1.8.3s1.5.6 2.5 1c3.4 1.5 7.1 2.7 11 3.5 4 .8 7.9 1.2 11.9 1.2 6.3 0 11.2-1.1 14.6-3.3s5.2-5.4 5.2-9.5c0-2.8-.9-5.1-2.7-7s-5.2-3.6-10.1-5.2l-14.5-4.5c-7.3-2.3-12.7-5.7-16-10.2s-5-9.7-5-15.4c0-4.4.9-8.3 2.6-11.6 1.8-3.4 4.2-6.2 7.3-8.4 3.1-2.3 6.8-4 11.1-5.2 4.3-1.2 9-1.7 14-1.7 2.1 0 4.3.1 6.6.4 2.3.2 4.5.6 6.7 1 2.1.4 4.1.9 6 1.5s3.5 1.2 4.6 1.9c1.4.8 2.4 1.6 3 2.5s.9 2.2.9 3.6v4.7c0 2.1-.8 3.2-2.3 3.2-.8 0-2.1-.4-3.8-1.2-5.7-2.6-12.1-3.9-19.2-3.9-5.7 0-10.2.9-13.3 2.8s-4.7 4.8-4.7 8.9c0 2.8 1 5.2 3 7.1s5.7 3.8 11 5.5l14.2 4.5c7.2 2.3 12.4 5.5 15.5 9.6s4.6 8.8 4.6 14c0 4.5-.9 8.5-2.6 12s-4.2 6.6-7.3 9.1c-3.1 2.5-6.9 4.5-11.4 5.8-4.5 1.4-9.2 2.1-14.3 2.1z"/>
-                      <path d="M273.5 143.7c-32.9 24.3-80.7 37.2-121.8 37.2-57.6 0-109.5-21.3-148.7-56.7-3.1-2.8-.3-6.6 3.4-4.4 42.4 24.6 94.7 39.5 148.8 39.5 36.5 0 76.6-7.6 113.5-23.2 5.5-2.5 10.2 3.6 4.8 7.6z"/>
-                      <path d="M287.2 128.1c-4.2-5.4-27.8-2.6-38.5-1.3-3.2.4-3.7-2.4-.8-4.5 18.8-13.2 49.7-9.4 53.3-5 3.6 4.5-1 35.4-18.6 50.2-2.7 2.3-5.3 1.1-4.1-1.9 4-9.9 12.9-32.2 8.7-37.5z"/>
+                    <svg className="w-16 h-10 text-orange-400 group-hover:text-orange-300 transition-colors" viewBox="0 0 126 76" fill="currentColor">
+                      <path d="M38.089 31.33c0 1.64.179 2.967.486 3.94.356 1.018.784 2.04 1.427 3.016.214.356.304.713.304 1.018 0 .446-.268.892-.839 1.338l-2.784 1.857c-.393.268-.785.393-1.16.393-.446 0-.892-.214-1.338-.624-.625-.66-1.16-1.374-1.606-2.085-.446-.75-.892-1.588-1.374-2.623-3.455 4.08-7.79 6.12-13.007 6.12-3.723 0-6.686-1.071-8.86-3.188-2.175-2.116-3.277-4.97-3.277-8.503 0-3.772 1.338-6.834 4.026-9.127 2.689-2.294 6.298-3.456 10.857-3.456 1.517 0 3.063.125 4.705.357 1.642.232 3.337.571 5.097.964v-3.218c0-3.366-.714-5.715-2.085-7.093-1.428-1.374-3.812-2.04-7.236-2.04-1.553 0-3.151.179-4.794.571-1.642.393-3.241.893-4.794 1.553-.714.304-1.249.5-1.553.571-.304.072-.535.143-.714.143-.625 0-.928-.446-.928-1.374v-2.175c0-.928.357-1.374 1.018-1.374.268 0 .535.054.803.143.268.089.66.268 1.106.446 1.517.66 3.151 1.196 4.884 1.553 1.767.357 3.491.535 5.276.535 2.796 0 4.973-.482 6.477-1.464 1.517-.982 2.3-2.39 2.3-4.205 0-1.249-.393-2.265-1.196-3.098-.803-.839-2.3-1.606-4.473-2.3l-6.441-2.004c-3.223-1.018-5.633-2.517-7.093-4.526-1.464-1.963-2.211-4.151-2.211-6.441 0-1.857.393-3.491 1.16-4.937.785-1.446 1.82-2.689 3.134-3.687 1.338-.982 2.85-1.731 4.616-2.211 1.767-.482 3.58-.714 5.454-.714.482 0 .982.018 1.517.054.535.036 1.053.107 1.571.179.5.072.982.143 1.464.232.482.089.928.179 1.338.304.446.179.803.357 1.071.535.268.179.482.393.66.66.179.268.268.589.268 1.018v2.085c0 .928-.357 1.41-1.018 1.41-.357 0-.928-.179-1.678-.535-2.532-1.16-5.365-1.731-8.503-1.731-2.532 0-4.509.411-5.883 1.249-1.374.821-2.085 2.122-2.085 3.955 0 1.249.446 2.3 1.338 3.134.892.839 2.517 1.678 4.884 2.444l6.298 1.999c3.187 1.018 5.49 2.444 6.869 4.259 1.374 1.82 2.04 3.901 2.04 6.191 0 1.999-.393 3.776-1.16 5.329-.785 1.553-1.857 2.921-3.241 4.026-1.374 1.106-3.063 1.963-5.061 2.552-2.032.607-4.169.91-6.352.91z"/>
                     </svg>
                   </div>
                   <div className="text-center">
@@ -313,52 +329,37 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
                 <div className="relative flex flex-col items-center justify-center p-8 bg-neutral-800/80 backdrop-blur-sm rounded-xl border border-neutral-700/50 hover:border-blue-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
                   <div className="w-20 h-20 flex items-center justify-center mb-4">
-                    {/* Official Yugabyte Logo - Text with distinctive styling */}
-                    <svg className="w-16 h-6 text-blue-400 group-hover:text-blue-300 transition-colors" fill="currentColor" viewBox="0 0 240 40">
-                      <path d="M8 8L20 20L8 32V8Z" fill="currentColor"/>
-                      <path d="M20 20L32 8V32L20 20Z" fill="currentColor" opacity="0.7"/>
-                      <path d="M45 8v8l8 4-8 4v8l16-12L45 8z" fill="currentColor"/>
-                      <path d="M75 8v24h4V20h8c6 0 10-4 10-10s-4-6-10-6H75zm4 4h8c2 0 4 1 4 3s-2 3-4 3h-8v-6z" fill="currentColor"/>
-                      <path d="M110 8c-8 0-14 6-14 14s6 14 14 14c4 0 8-2 10-5l-3-2c-1 2-4 3-7 3-5 0-9-4-9-10s4-10 9-10c3 0 6 1 7 3l3-2c-2-3-6-5-10-5z" fill="currentColor"/>
-                      <path d="M135 8v24h4V20h12v-4h-12v-4h14V8h-18z" fill="currentColor"/>
-                      <path d="M165 8v24h4V20h8c6 0 10-4 10-10s-4-6-10-6h-12zm4 4h8c2 0 4 1 4 3s-2 3-4 3h-8v-6z" fill="currentColor"/>
-                      <path d="M195 8v24h18v-4h-14v-6h12v-4h-12v-6h14V8h-18z" fill="currentColor"/>
-                      <path d="M225 8v4h6v20h4V12h6V8h-16z" fill="currentColor"/>
+                    <svg className="w-16 h-16 text-blue-400 group-hover:text-blue-300 transition-colors" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+                      <path d="M20 50L50 20L80 50L50 80L20 50Z" strokeWidth="4"/>
+                      <path d="M35 50L50 35L65 50L50 65L35 50Z" strokeWidth="4" fill="currentColor"/>
+                      <path d="M20 50H80" strokeWidth="2"/>
+                      <path d="M50 20V80" strokeWidth="2"/>
                     </svg>
                   </div>
                   <div className="text-center">
                     <h3 className="text-sm font-bold text-white group-hover:text-blue-300 transition-colors mb-1">YugabyteDB</h3>
-                    <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">Distributed SQL</p>
+                    <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">Partner</p>
                   </div>
                 </div>
               </div>
 
-
-              {/* Neon */}
+              {/* Google Firestore */}
               <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
-                <div className="relative flex flex-col items-center justify-center p-8 bg-neutral-800/80 backdrop-blur-sm rounded-xl border border-neutral-700/50 hover:border-green-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-red-500/20 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
+                <div className="relative flex flex-col items-center justify-center p-8 bg-neutral-800/80 backdrop-blur-sm rounded-xl border border-neutral-700/50 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
                   <div className="w-20 h-20 flex items-center justify-center mb-4">
-                    {/* Official Neon Logo */}
-                    <svg className="w-14 h-14 text-green-400 group-hover:text-green-300 transition-colors" fill="currentColor" viewBox="0 0 100 100">
-                      <defs>
-                        <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                          <stop offset="0%" stopColor="#00ff88"/>
-                          <stop offset="100%" stopColor="#00d166"/>
-                        </linearGradient>
-                      </defs>
-                      <path d="M20 20v60h8V35l24 45h8V20h-8v45L28 20h-8z" fill="url(#neonGradient)"/>
-                      <circle cx="75" cy="25" r="4" fill="#00ff88">
-                        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
-                      </circle>
-                      <rect x="70" y="15" width="10" height="3" rx="1.5" fill="#00ff88">
-                        <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
-                      </rect>
+                    <svg className="w-14 h-14" viewBox="0 0 100 100">
+                      <path d="M50 10L30 30v40l20 10 20-10V30L50 10z" fill="#4285f4" opacity="0.2" stroke="#4285f4" strokeWidth="3"/>
+                      <path d="M30 30h40" stroke="#4285f4" strokeWidth="2"/>
+                      <path d="M35 40h30" stroke="#ea4335" strokeWidth="2"/>
+                      <path d="M35 50h25" stroke="#34a853" strokeWidth="2"/>
+                      <path d="M35 60h20" stroke="#fbbc04" strokeWidth="2"/>
+                      <circle cx="50" cy="25" r="3" fill="#ea4335"/>
                     </svg>
                   </div>
                   <div className="text-center">
-                    <h3 className="text-sm font-bold text-white group-hover:text-green-300 transition-colors mb-1">Neon</h3>
-                    <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">Serverless Postgres</p>
+                    <h3 className="text-sm font-bold text-white group-hover:text-yellow-300 transition-colors mb-1">Google</h3>
+                    <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">Firestore</p>
                   </div>
                 </div>
               </div>
@@ -368,14 +369,8 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 to-orange-500/20 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
                 <div className="relative flex flex-col items-center justify-center p-8 bg-neutral-800/80 backdrop-blur-sm rounded-xl border border-neutral-700/50 hover:border-red-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
                   <div className="w-20 h-20 flex items-center justify-center mb-4">
-                    {/* Oracle Logo - Text-based */}
-                    <svg className="w-16 h-8 text-red-400 group-hover:text-red-300 transition-colors" fill="currentColor" viewBox="0 0 200 60">
-                      <path d="M30 15C18 15 8 23 8 32.5S18 50 30 50s22-8 22-17.5S42 15 30 15zm0 28c-8 0-14-5-14-10.5S22 22 30 22s14 5 14 10.5S38 43 30 43z"/>
-                      <path d="M70 15c-6 0-11 2-15 5v-4h-8v33h8V31c2-3 6-5 10-5 6 0 9 3 9 8v15h8V33c0-10-5-18-12-18z"/>
-                      <path d="M105 15c-8 0-15 3-20 8l5 5c3-3 8-5 13-5 6 0 10 2 10 6v2c-3-1-7-2-11-2-9 0-16 4-16 12s7 12 16 12c4 0 8-1 11-3v2h8V30c0-9-7-15-16-15zm5 26c-2 2-5 3-8 3-4 0-7-2-7-5s3-5 7-5c3 0 6 1 8 2v5z"/>
-                      <path d="M145 15c-10 0-18 8-18 17.5s8 17.5 18 17.5c6 0 11-3 14-7l-6-4c-2 2-5 3-8 3-6 0-10-4-10-9.5s4-9.5 10-9.5c3 0 6 1 8 3l6-4c-3-4-8-7-14-7z"/>
-                      <path d="M175 15v34h8V15h-8z"/>
-                      <path d="M192 35c0 8 6 14 14 14s14-6 14-14V15h-8v20c0 4-2 6-6 6s-6-2-6-6V15h-8v20z"/>
+                    <svg className="w-16 h-8 text-red-400 group-hover:text-red-300 transition-colors" viewBox="0 0 100 40">
+                      <path d="M50 0C22.4 0 0 8.9 0 20s22.4 20 50 20 50-8.9 50-20S77.6 0 50 0zm0 30c-13.8 0-25-4.5-25-10s11.2-10 25-10 25 4.5 25 10-11.2 10-25 10z" fill="currentColor"/>
                     </svg>
                   </div>
                   <div className="text-center">
@@ -384,29 +379,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
-            {/* Google Firestore */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-red-500/20 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
-              <div className="relative flex flex-col items-center justify-center p-8 bg-neutral-800/80 backdrop-blur-sm rounded-xl border border-neutral-700/50 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
-                <div className="w-20 h-20 flex items-center justify-center mb-4">
-                  {/* Google Firestore Logo - Google colors with document/fire theme */}
-                  <svg className="w-14 h-14 text-yellow-400 group-hover:text-yellow-300 transition-colors" fill="none" viewBox="0 0 100 100">
-                    <path d="M50 10L30 30v40l20 10 20-10V30L50 10z" stroke="currentColor" strokeWidth="3" fill="currentColor" opacity="0.2"/>
-                    <path d="M30 30h40" stroke="#4285f4" strokeWidth="2"/>
-                    <path d="M35 40h30" stroke="#ea4335" strokeWidth="2"/>
-                    <path d="M35 50h25" stroke="#34a853" strokeWidth="2"/>
-                    <path d="M35 60h20" stroke="#fbbc04" strokeWidth="2"/>
-                    <circle cx="50" cy="25" r="3" fill="#ea4335"/>
-                  </svg>
-                </div>
-                <div className="text-center">
-                  <h3 className="text-sm font-bold text-white group-hover:text-yellow-300 transition-colors mb-1">Google</h3>
-                  <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">Firestore</p>
-                </div>
-              </div>
             </div>
-          </div>
 
           {/* Artistic connection lines */}
           <div className="hidden lg:block absolute inset-0 pointer-events-none">
