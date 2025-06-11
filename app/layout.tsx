@@ -8,6 +8,11 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'DocumentDB - Open Source Document Database',
   description: 'A powerful, scalable open-source document database solution',
+  icons: {
+    icon: [
+      { url: '/logo.svg', type: 'image/svg+xml' }
+    ]
+  }
 }
 
 export default function RootLayout({
