@@ -6,12 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@octokit/openapi-types": "^25.1.0",
     "@octokit/rest": "^22.0.0",
-    "next": "14.2.0",
+    "next": "^14.2.30",
     "react": "^18",
     "react-dom": "^18"
   },

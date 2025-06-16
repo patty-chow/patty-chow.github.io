@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
   try {
-    const response = await fetch('https://discord.com/api/v10/guilds/YOUR_SERVER_ID', {
+    const response = await fetch('https://discord.com/api/v10/guilds/1374170121219866635', {
       headers: {
         Authorization: `Bot ${process.env.DISCORD_BOT_TOKEN}`,
       },
@@ -15,7 +15,7 @@ export async function GET() {
     const data = await response.json();
 
     // Get channel information
-    const channelsResponse = await fetch('https://discord.com/api/v10/guilds/YOUR_SERVER_ID/channels', {
+    const channelsResponse = await fetch('https://discord.com/api/v10/guilds/1374170121219866635/channels', {
       headers: {
         Authorization: `Bot ${process.env.DISCORD_BOT_TOKEN}`,
       },
