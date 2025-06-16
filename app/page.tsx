@@ -297,7 +297,7 @@ export default function Home() {
                   <div className="w-20 h-20 flex items-center justify-center mb-4">
                     {/* TODO: Paste Amazon DocumentDB SVG logo here */}
                     <div className="w-16 h-16 flex items-center justify-center text-orange-400">
-                      {/* Amazon SVG logo goes here */}
+                    <Image src="/aws-logo.svg" alt="AWS Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                     </div>
                   </div>
                   <div className="text-center">
