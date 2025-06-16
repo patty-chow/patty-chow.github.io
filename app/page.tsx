@@ -328,7 +328,7 @@ export default function Home() {
                   <div className="w-20 h-20 flex items-center justify-center mb-4">
                     {/* TODO: Paste Microsoft Azure SVG logo here */}
                     <div className="w-16 h-16 flex items-center justify-center text-blue-500">
-                      {/* Microsoft Azure SVG logo goes here */}
+                    <Image src="/azure-logo.svg" alt="Azure Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                     </div>
                   </div>
                   <div className="text-center">
