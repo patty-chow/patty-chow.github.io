@@ -1,4 +1,5 @@
 import CommunitySection from './components/CommunitySection';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -117,7 +118,7 @@ export default function Home() {
                     InfoWorld
                   </span>
                   <h3 className="text-sm font-semibold text-white mb-2 group-hover:text-orange-400 transition-colors line-clamp-3">
-                    Microsoft's new DocumentDB rethinks NoSQL on PostgreSQL
+                    Microsoft&apos;s new DocumentDB rethinks NoSQL on PostgreSQL
                   </h3>
                   <p className="text-gray-400 text-xs mb-3 line-clamp-2">
                     Open-source alternative to MongoDB
@@ -311,7 +312,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-purple-500/20 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
                 <div className="relative flex flex-col items-center justify-center p-8 bg-neutral-800/80 backdrop-blur-sm rounded-xl border border-neutral-700/50 hover:border-purple-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
                   <div className="w-20 h-20 flex items-center justify-center mb-4">
-                    <img src="/yugabyte.svg" alt="YugabyteDB Logo" className="w-16 h-16 object-contain" />
+                    <Image src="/yugabyte.svg" alt="YugabyteDB Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                   </div>
                   <div className="text-center">
                     <h3 className="text-sm font-bold text-white group-hover:text-purple-300 transition-colors mb-1">YugabyteDB</h3>
