@@ -6,6 +6,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: process.env.NODE_ENV === 'production' ? '/patty-chow.github.io' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/patty-chow.github.io/' : '',
 }
 
 module.exports = nextConfig
