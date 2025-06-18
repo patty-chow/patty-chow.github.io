@@ -8,8 +8,8 @@
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #ffffff;
+    color: #e5e7eb;
+    background: linear-gradient(135deg, #181924 0%, #23243a 100%);
 }
 
 .container {
@@ -20,9 +20,9 @@ body {
 
 /* Header */
 .header {
-    background: rgba(255, 255, 255, 0.95);
+    background: #181924;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #23243a;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -41,7 +41,7 @@ body {
     gap: 0.5rem;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #1f2937;
+    color: #fff;
 }
 
 .logo-icon {
@@ -56,20 +56,20 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #6b7280;
+    color: #cbd5e1;
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-    color: #3b82f6;
+    color: #fff;
 }
 
 /* Hero Section */
 .hero {
     padding: 4rem 0 6rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #23243a 0%, #181924 100%);
+    color: #fff;
     position: relative;
     overflow: hidden;
 }
@@ -81,8 +81,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    opacity: 0.3;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.2;
 }
 
 .hero .container {
@@ -99,10 +99,11 @@ body {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 
 .highlight {
-    background: linear-gradient(45deg, #fbbf24, #f59e0b);
+    background: linear-gradient(45deg, #6366f1, #3b82f6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -113,6 +114,7 @@ body {
     margin-bottom: 2rem;
     opacity: 0.9;
     line-height: 1.6;
+    color: #cbd5e1;
 }
 
 .hero-buttons {
@@ -130,45 +132,49 @@ body {
     transition: all 0.2s ease;
     border: none;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .btn-primary {
-    background: #fbbf24;
-    color: #1f2937;
+    background: #fff;
+    color: #23243a;
 }
 
 .btn-primary:hover {
-    background: #f59e0b;
+    background: #6366f1;
+    color: #fff;
     transform: translateY(-2px);
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border: 1px solid #6366f1;
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: #23243a;
+    color: #fff;
+    border-color: #fff;
     transform: translateY(-2px);
 }
 
 /* Code Block */
 .code-block {
-    background: #1f2937;
+    background: #23243a;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.08);
 }
 
 .code-header {
-    background: #374151;
+    background: #23243a;
     padding: 1rem;
-    border-bottom: 1px solid #4b5563;
+    border-bottom: 1px solid #353657;
 }
 
 .code-title {
-    color: #d1d5db;
+    color: #cbd5e1;
     font-weight: 600;
     font-size: 0.875rem;
 }
@@ -180,6 +186,7 @@ body {
     font-size: 0.875rem;
     line-height: 1.5;
     color: #e5e7eb;
+    background: #23243a;
     overflow-x: auto;
 }
 
@@ -190,7 +197,7 @@ body {
 /* Features Section */
 .features {
     padding: 6rem 0;
-    background: #f9fafb;
+    background: #181924;
 }
 
 .section-title {
@@ -198,7 +205,7 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 3rem;
-    color: #1f2937;
+    color: #fff;
 }
 
 .features-grid {
@@ -208,16 +215,16 @@ body {
 }
 
 .feature-card {
-    background: white;
+    background: #23243a;
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.12);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.08);
 }
 
 .feature-icon {
@@ -229,18 +236,18 @@ body {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
-    color: #1f2937;
+    color: #fff;
 }
 
 .feature-description {
-    color: #6b7280;
+    color: #94a3b8;
     line-height: 1.6;
 }
 
 /* Getting Started Section */
 .getting-started {
     padding: 6rem 0;
-    background: white;
+    background: #23243a;
 }
 
 .getting-started-content {
@@ -261,8 +268,8 @@ body {
 }
 
 .step-number {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #6366f1 0%, #3b82f6 100%);
+    color: #fff;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -278,34 +285,34 @@ body {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #1f2937;
+    color: #fff;
 }
 
 .step-content p {
-    color: #6b7280;
+    color: #94a3b8;
     margin-bottom: 1rem;
     line-height: 1.6;
 }
 
 .code-inline {
-    background: #f3f4f6;
+    background: #181924;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
     font-size: 0.875rem;
-    color: #374151;
+    color: #cbd5e1;
     overflow-x: auto;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #23243a;
 }
 
 .code-inline code {
-    color: #374151;
+    color: #cbd5e1;
 }
 
 /* Footer */
 .footer {
-    background: #1f2937;
-    color: white;
+    background: #181924;
+    color: #fff;
     padding: 3rem 0 1rem;
 }
 
@@ -319,11 +326,11 @@ body {
 .footer-section h3,
 .footer-section h4 {
     margin-bottom: 1rem;
-    color: #f9fafb;
+    color: #fff;
 }
 
 .footer-section p {
-    color: #d1d5db;
+    color: #cbd5e1;
     line-height: 1.6;
 }
 
@@ -336,20 +343,20 @@ body {
 }
 
 .footer-links a {
-    color: #d1d5db;
+    color: #cbd5e1;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
-    color: #fbbf24;
+    color: #fff;
 }
 
 .footer-bottom {
-    border-top: 1px solid #374151;
+    border-top: 1px solid #23243a;
     padding-top: 1rem;
     text-align: center;
-    color: #9ca3af;
+    color: #94a3b8;
 }
 
 /* Responsive Design */
@@ -413,7 +420,7 @@ html {
 /* Focus styles for accessibility */
 .nav-link:focus,
 .btn:focus {
-    outline: 2px solid #3b82f6;
+    outline: 2px solid #6366f1;
     outline-offset: 2px;
 }
 
